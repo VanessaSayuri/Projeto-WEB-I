@@ -1,0 +1,261 @@
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+html, body{
+    background-color: rgb(237,220,210);
+    height: 100%;
+    /* font-size: 1.4rem; */
+    margin: 0;
+}
+
+
+
+a{
+    color: initial; /*para tirar a marcação de link*/
+    text-decoration: none;
+}
+
+
+
+header{
+    z-index: 9999;
+    top: 0;
+    display: flex;
+    margin: auto;
+    padding: auto;
+
+}
+
+.layout-cabecalho{
+    margin: 10px;
+    border: 5px;
+    padding: 25px;
+    /* background-color: rgb(255,241,230); */
+
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+#data-hoje{
+    color: rgb(20, 24, 24);
+    max-height: 400px;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: rgb(183,183,164);
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+
+    margin: auto;
+}
+
+form{
+    align-items: center;
+}
+
+form input {
+    padding:5px;
+
+    border: 4px solid white;
+    background-color: rgb(240, 239,235);
+
+    align-items: center;
+    font-size: 28px;
+
+    justify-content: center;
+}
+
+
+.campoAtividade{
+    border: 1px solid rgb(255, 255, 255);
+
+
+}
+
+.btnAdicionar{
+    color: rgb(43, 23, 19);
+    border-radius: 10px;
+    background-color: rgb(255,241,230);;
+    border: 3px solid rgb(237,220,210);;
+    text-decoration: none;
+    padding: 6px 10px;
+    cursor:pointer;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight:bold;
+    font-size: 18px;
+    display: inline;
+}
+
+.fAtividade{
+    padding: 5px;
+    margin: 0 auto;
+    width: 50%;
+    align-items: center;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.tbl{
+    text-align: center;
+    background-color: rgb(221,190,169);
+    margin: 0 auto;
+    width: 50%;
+    font-size: 22px;
+    font-weight: bold;
+
+
+
+}
+
+.tbl-cabecalho{
+    color: rgb(33, 33, 63);
+    background-color:   rgb(221,190,169);;
+    position: absolute;
+    display: flex;
+
+    border: 5px double rgb(183,183,164);
+    /* margin: 0 auto;
+    width: 50%; */
+
+}
+
+.tbl-id{
+    position: relative;
+    background-color: rgb(221,190,169);
+    margin: 5px 20px;
+
+}
+
+.id{
+    padding-top: 5px;
+
+}
+
+.tbl-atividade{
+    position: relative;
+    margin: 5px 50px;
+    background-color: rgb(221,190,169);
+    
+}
+
+.atividade{
+    padding-top: 5px;
+
+}
+
+.tbl-prazo{
+    position: relative;
+    /* margin: 5px 30px; */
+    background-color: rgb(221,190,169);
+}
+
+input[type=date]{
+
+    -webkit-appearance: none;
+}
+
+.effect{
+    color: rgb(43, 23, 19);
+    border-radius: 10px;
+    background-color: transparent;
+    border: 3px solid rgb(237,220,210);
+    text-decoration: none;
+    /* padding: 6px 10px; */
+    cursor:pointer;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight:bold;
+    font-size: 15px;
+    -webkit-appearance: none;
+
+    width: 100%; 
+}
+
+
+/* .effect{
+    background-color: transparent; color: tomato; width: 100%; border: transparent;
+    } */
+
+.tbl-prioridade{
+    position: relative;
+    margin: 5px 20px;
+    background-color:   rgb(221,190,169);
+    
+}
+
+select{
+    background: transparent;
+    /* width: 110px; */
+    background-color: rgb(221,190,168);
+    font-size: 18px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: bold;
+    align-items: center;
+    border: 1px  black;
+    border-radius: 0;
+    height: 24px;
+    padding-top: 5px;
+    margin-top: 5px;
+    /* -webkit-appearance: none; */
+}
+
+.tbl-status{
+    position: relative;
+    margin: 5px 20px;
+    background-color:   rgb(221,190,169);
+}
+
+.tbl-botao{
+    position: relative;
+    margin: 5px 30px;
+}
+
+
+.btnExcluir{
+    color: rgb(43, 23, 19);
+    border-radius: 10px;
+    background-color: rgb(207, 110, 57);
+    border: 3px solid rgb(237,220,210);
+    text-decoration: none;
+    /* padding: 6px 10px; */
+    cursor:pointer;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight:bold;
+    font-size: 18px;
+
+}
+
+
+.btnPrazo{
+    color: transparent;
+    border-radius: 10px;
+    background-color: transparent;
+    border: transparent;
+    text-decoration: none;
+    padding-top: 3px; 
+    cursor:pointer;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight:bold;
+    font-size: 18px;
+    -webkit-appearance: none;
+     width: 100%;
+}
+
+.id, .atividade, .prioridade, .status, .botao {
+    height: 30px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> To Do LIST</title>
+
+
+    <meta charset="utf-8" name="viewport">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="mainscript.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <header class="layout-cabecalho" id="cabecalho">
+
+        <div id="data-hoje"></div>
+
+    </header>
+
+
+    <div id="fAtividade" class="fAtividade">
+        <form class="inserirAtividade" method="post" id="adicionarAtividade">
+            <!-- <label for="atividadeform">Atividade</label> -->
+            <input class="campoAtividade" type="text" id="atividade" name="txtAtividade" placeholder="">
+
+            <button class="btnAdicionar" type="submit">Adicionar</button>
+
+        </form>
+    </div>
+
+    <div class="tbl">
+        <div id="div-cabecalho" class="tbl-cabecalho">
+            <div id="tbl-id" class="tbl-id">ID</div>
+            <div id="tbl-atividade" class="tbl-atividade">Atividade</div>
+            <div id="tbl-prazo" class="tbl-prazo">Prazo</div>
+            <div id="tbl-prioridade" class="tbl-prioridade">Prioridade</div>
+            <div id="tbl-status" class="tbl-status">Status</div>
+            <div id="tbl-botao" class="tbl-botao">. </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
